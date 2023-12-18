@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>webApp</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./stylesheet.css">
-</head>
-<body>
+    <head>
+        <title>webApp</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./stylesheet.css">
+    </head>
+    <body>
 
-<table id="append">
-    <tr>
-        <th>name</th>
-        <th>content</th>
-        <th>action</th>
-    </tr>
-</table>
+    <table id="append">
+        <tr>
+            <th>name</th>
+            <th>content</th>
+            <th>action</th>
+        </tr>
+    </table>
 
-<button id="myBtn">add a todo</button>
+    <button id="myBtn">add a todo</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+    <div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div id="m.value" class="modal-content">
-        <span class="close">&times;</span>
-        <label>name
-            <input name="name" id="addname" type="text">
-        </label>
-        <br>
-        <label>contenu</label>
-            <input name="content" id="addcontent" type="text">
-        <hr>
-        <button type="submit" id="add">save todo</button>
-        <button type="submit" id="put">modify todo</button>
+        <div id="m.value" class="modal-content">
+            <span class="close">&times;</span>
+            <table class="modal-input-box">
+                <tr class="modal-input">
+                    <th><label for="addname">name</label></th>
+                    <th><input name="name" id="addname" type="text"></th>
+                </tr>
+                <tr class="modal-input">
+                    <th><label for="addcontent">contenu</label></th>
+                    <th><input name="content" id="addcontent" type="text"></th>
+                </tr>
+            </table>
+            <hr>
+            <button type="submit" id="add">save todo</button>
+            <button type="submit" id="put">modify todo</button>
+        </div>
+
     </div>
 
-</div>
 
 
-
-</body>
-<script src="./index.js"></script>
+    </body>
+    <script src="./index.js"></script>
 </html>

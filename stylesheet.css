@@ -14,8 +14,17 @@ body {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     color: black;
-}
 
+}
+.modal-input-box{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.modal-input{
+    display: flex;
+    justify-content: space-around;
+}
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
